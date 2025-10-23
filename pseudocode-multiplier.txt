@@ -1,0 +1,26 @@
+% P is product
+% A is multiplicand
+% B is multiplier
+
+P = 0 ;
+A = OperandA ;
+B = OperandB ;
+
+if A[n-1] xor B[n-1] then
+    if A[n-1] = 1 then 
+        A = A' + 1 ;
+    else
+        B = B' + 1 ;
+    end elif ;
+end if;
+
+for i = 0 to n − 1 do
+    if B[i] = 1 then
+        P = P + A ;
+    end if ;
+    Left-shift A ;
+end for ;
+
+if A[n-1] xor B[n-1] then
+    P = P' + 1 ;
+end if ;
